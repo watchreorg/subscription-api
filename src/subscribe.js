@@ -35,9 +35,9 @@ stream.addEventListener('chain_reorg', (e) => {
 });
 
 stream.addEventListener('open', (e) => {
-  console.log('Subscribed to event stream -', e);
+  console.log(new Date().toUTCString(), '- Subscribed to event stream -', e);
 });
 
 stream.addEventListener('error', (e) => {
-  console.error('Error with event stream -', e);
+  console.error(new Date().toUTCString(), '- Error with event stream -', e);
 });
