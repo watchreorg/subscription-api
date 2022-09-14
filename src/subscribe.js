@@ -1,6 +1,9 @@
 const EventSource = require("eventsource");
 const fs = require("fs");
 const path = require("path");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 let reorgFile = path.join(__dirname, 'reorgs.json');
 

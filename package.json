@@ -3,6 +3,7 @@
     "subscribe": "node src/subscribe.js"
   },
   "dependencies": {
+    "dotenv": "^16.0.2",
     "eventsource": "^2.0.2"
   }
 }
