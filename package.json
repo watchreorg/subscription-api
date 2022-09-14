@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "subscribe": "node src/subscribe.js"
+  },
+  "dependencies": {
+    "eventsource": "^2.0.2"
+  }
+}
