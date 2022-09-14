@@ -1,1 +1,1 @@
-# suscription-api
+# subscription-api
