@@ -8,7 +8,7 @@ dotenv.config();
 let reorgFile = path.join(__dirname, 'reorgs.json');
 
 let endpoint = `${process.env.SUBSCRIPTION_PATH}/eth/v1/events?topics=chain_reorg`;
-let stream = new EventSource(endpoint);
+let stream = new EventSource(endpoint, { withCredentials: true });
 
 let appendBlock = (block) => {
   fs.readFile(reorgFile, (error, data) => {
